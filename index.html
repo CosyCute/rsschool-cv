@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fedorov's CV</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="photo" src="sprites/profile_photo.jpg" alt="Profile photo" width="150" height="150">
+        <section class="name">
+            <h3>Fedorov Roman</h3>
+            <h3>RS-School student</h3>
+        </section>
+
+        <article class="contact">
+            <a href="mailto:sugus02@inbox.ru"><img src="sprites/email.png" alt="Email Pic" width="25" height="25"></a> <br>
+            <a href="https://tlgg.ru/CosyCute"><img src="sprites/telegram.png" alt="Telegram Pic" width="25" height="25"></a>
+        </article>
+        <section class="link">
+            <span>Contacts:</span> <br>
+            <span>Email - <a href="mailto:sugus02@inbox.ru">sugus02@inbox.ru</a></span><br>
+            <span>Telegram - <a href="https://tlgg.ru/CosyCute">@CosyCute</a></span>
+        </section>
+    </header>
+    <main>
+        <div style="margin-left: 20px">
+        <h2>Summary</h2>
+        <p class="text">My goal is to learn how to program in JavaScript and start working in this language, 
+            I am a beginner in programming, so I chose this relatively easy programming language. 
+            I am fast learner and hardworking because I live by it :). I haven’t experience in 
+            professional programming, but i do everything to learn and start working;</p>
+        <h2>Skills</h2>
+        <ul>
+            <li>C#, Unity</li>
+            <li>HTML, CSS</li>
+            <li>Git</li>
+        </ul>
+        <h2>Example code</h2>
+        <p>Task solution from <a href="https://www.codewars.com/dashboard">Codewars</a> website :)</p>
+        <pre><code style="margin-right: 90%;">
+using System; 
+public class Kata 
+{
+    public static string ToCamelCase(string str) 
+    {
+        string[] words = str.Split('-'); 
+        if (str.Contains('_')) words = str.Split('_'); 
+            char firstLetter = str[0]; 
+        string temporaryString; 
+        str = ""; 
+        if (Char.IsUpper(firstLetter))
+            foreach(var e in words)
+                str += e;
+        else 
+            for (int i = 0; i < words.Length; i++)
+            { 
+                temporaryString = words[i];
+                if (i > 0) temporaryString = temporaryString[0].ToString().ToUpper() + temporaryString.Substring(1);
+                    str += temporaryString;
+            }
+        return str; 
+    }
+}
+        </code></pre>
+        <h2>Expirience</h2>
+        <p><a href="https://drive.google.com/drive/folders/1VBdITsPAeUBK4-mQnWFpbi6iomVQAV3V?usp=sharing">This is my university project</a> for the development of memory<br>
+            <a href="https://drive.google.com/drive/folders/12jQ4OWpQn71O9GrAxVdQd8bexphwzMTI?usp=sharing">Scripts</a> for project<br>
+            I also took a course on <a href="https://ulearn.me">https://ulearn.me</a> (Stage 1, Stage 2)</p>
+        <h2>Education</h2>
+        <p>I am currently studying at the university and at the RS School</p>
+        <h2>English</h2>
+        <p>My english level is B1!</p>
+        </div>
+    </main>
+</body>
+</html>
