@@ -1,1 +1,1 @@
-https://CosyCute.github.io/rsschool-cv/cv
+https://CosyCute.github.io/rsschool-cv/
