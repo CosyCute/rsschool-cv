@@ -49,3 +49,10 @@ h2{
 p{
     margin-left: 20px;
 }
+footer{
+    display: flex;
+    background-color: #7d7f7d;
+    flex-direction: row;
+    justify-content:  space-around;
+    align-items: center;
+}
